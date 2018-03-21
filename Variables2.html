@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="number"> </p>
+
+<script>
+	var personObject = maker("Jack", 94, "LumberJack");
+	
+
+	function maker(name, age, occupation) 
+	{
+	var it = {};
+
+	it.name = name;
+	it.age = age;
+	it.occupation = occupation;
+	return it;
+	}
+	
+	console.log(personObject);
+	var personObject = maker("Jeff", 12, "LumberJeff");
+	console.log(personObject);
+</script>
+</body>
+</html>

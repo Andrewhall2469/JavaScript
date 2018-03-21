@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="threeSum()">Add 3 Numbers</button>
+
+<p id="number"> </p>
+
+<script>
+	function threeSum() {
+	var n1 = prompt("Enter a number to be added");
+	var n1 = parseInt(n1);
+	var n2 = prompt("Enter a number to be added");
+	var n2 = parseInt(n2);
+	var n3 = prompt("Enter a number to be added");
+	var n3 = parseInt(n3);
+
+	if (n1 != null && n2 != null & n3 != null) {
+		var answer = n1+n2+n3;
+		document.getElementById("number").innerHTML = 
+		n1 + "+" + n2 + "+" + n3 + "=" + answer;
+		
+	}
+}
+// Second Code Challenge without prompt
+function threeSum2(a, b, c) {
+
+	var answer = a + b + c;
+
+	console.log(answer);
+	window.alert(answer);
+	return answer;
+	}
+threeSum2(12,19,84);
+
+</script>
+</body>
+</html>

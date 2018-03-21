@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="displayArray()">Display the Array</button>
+	<script type="text/javascript">
+
+		function displayArray()
+		{
+			var myArray = ["dog", "cat", "pig"];
+			window.alert(myArray);
+			console.log(myArray);
+
+			myArray[myArray.length] = 'chicken';
+			// myArray.push("chicken");
+			window.alert(myArray);
+			console.log(myArray);
+
+			delete myArray[myArray.length-1];
+			myArray.splice(myArray.length-1, 1)
+			window.alert(myArray);
+			console.log(myArray);
+		}
+	</script>
+</body>
+</html>

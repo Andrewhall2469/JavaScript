@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="forLoop()">RUN THE FIZZ BUZZ</button>
+
+
+	<script>
+	function forLoop()
+	{
+		for(var i = 1; i < 101; i += 1)
+		{
+			if (i % 3 == 0)
+			{	if (i % 5 == 0) 
+				{
+					console.log("FizzBuzz" + "<br>");
+					document.writeln("FizzBuzz" + "<br>");
+				}
+				else
+				{
+					console.log("Fizz" + "<br>");
+					document.writeln("Fizz" + "<br>");
+				}
+			}
+			else if (i % 5 == 0)
+			{
+				console.log("Buzz" + "<br>");
+				document.writeln("Buzz" + "<br>");
+			}
+				
+			else
+			{
+				console.log(i + "<br>");
+				document.writeln(i + "<br>");
+			}
+		}
+	}
+	</script>
+</body>
+</html>

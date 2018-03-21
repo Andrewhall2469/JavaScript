@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="addYearToPerson()">Add a year to person</button>
+
+<script>
+	var personObject = maker("Jack", 94, "LumberJack");
+	
+
+	function maker(name, age, occupation) 
+	{
+	var it = {};
+
+	it.name = name;
+	it.age = age;
+	it.occupation = occupation;
+	return it;
+	}
+	
+	console.log(personObject);
+	var personObject = maker("Jeff", 12, "LumberJeff");
+	console.log(personObject);
+
+	function addYearToPerson()
+{
+
+	personObject.age += 1;
+	console.log(personObject);
+}
+</script>
+</body>
+</html>

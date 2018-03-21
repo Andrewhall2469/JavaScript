@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="addYearToPerson()">Add a year to person</button>
+<button onclick="checkAge()">Check age is between 20 &#38; 40</button>
+
+<script>
+	var personObject = maker("Jack", 94, "LumberJack");
+	
+
+	function maker(name, age, occupation) 
+	{
+	var it = {};
+
+	it.name = name;
+	it.age = age;
+	it.occupation = occupation;
+	return it;
+	}
+	
+	console.log(personObject);
+	var personObject = maker("Jeff", 12, "LumberJeff");
+	console.log(personObject);
+
+	function addYearToPerson()
+{
+
+	personObject.age += 1;
+	console.log(personObject);
+}
+
+	function checkAge()
+	{
+		var x = 19;
+		var y = 41;
+		if (personObject.age > x && personObject.age < y)
+		{
+			window.alert("TRUE");
+			console.log("TRUE");
+		}
+		else {
+			window.alert("FALSE");
+			console.log("FALSE");
+			 }
+	}
+</script>
+</body>
+</html>

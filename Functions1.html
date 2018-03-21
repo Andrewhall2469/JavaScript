@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="square()">Square Function</button>
+
+<p id="number"> </p>
+<script>
+	function square() {
+	var n = prompt("Enter a number to be squared");
+
+	if (n != null) {
+		document.getElementById("number").innerHTML = 
+		n + "*" + n + "=" + n*n;
+		var answer = n*n;
+		window.alert("Answer is: " + answer);
+		console.log(answer);
+	}
+}
+
+</script>
+</body>
+</html>
